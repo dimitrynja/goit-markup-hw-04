@@ -365,11 +365,13 @@ img {
   margin-left: 30px;
 }
 .client_icon {
+  display: block;
+  margin: 0 auto;
   width: 106px;
   height: 60px;
 }
 .client_box {
-  padding: 15px 31px;
+  padding-top: 16px;
 }
 
 /*portfolio*/
