@@ -317,24 +317,19 @@ img {
 }
 .social_link {
   display: block;
-  width: 44px;
-  height: 44px;
-  padding: 12px;
   border-radius: 22px;
-}
-.social_link:hover {
-  background-color: var(--accent);
 }
 .social_item:not(:first-child) {
   margin-left: 10px;
 }
 .soc_items {
-  width: 20px;
-  height: 20px;
+  width: 44px;
+  height: 44px;
   fill: var(--color_soc_links);
 }
 .soc_items:hover {
   fill: var(--soc_links_hover);
+  background-color: var(--accent);
 }
 
 /*clients*/
@@ -353,34 +348,14 @@ img {
 .client_list:not(:first-child) {
   margin-left: 30px;
 }
-.client_box {
+.client_icon {
   width: 106px;
   height: 60px;
 }
-.ya_co {
-  width: 41px;
-  height: 47px;
+.client_box {
+  padding: 16px 32px;
 }
-.company_th {
-  width: 40px;
-  height: 52px;
-}
-.company {
-  width: 44px;
-  height: 41px;
-}
-.foster {
-  width: 84px;
-  height: 41px;
-}
-.brand {
-  width: 63px;
-  height: 45px;
-}
-.tag_line {
-  width: 94px;
-  height: 44px;
-}
+
 /*portfolio*/
 .portfolio_section {
   padding-top: 84px;
