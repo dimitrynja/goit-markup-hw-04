@@ -20,6 +20,7 @@ html {
   --border_color: #ececec;
   --color_soc_links: #afb1b8;
   --soc_links_hover: #fff;
+  --footer_soc_background: rgba(255, 255, 255, 0.1);
 }
 body {
   background-color: var(--primary_color);
@@ -100,6 +101,8 @@ img {
   font-size: 26px;
   line-height: 1.2;
   color: var(--color_nav);
+}
+.header_logo {
   padding-top: 24px;
   padding-bottom: 25px;
 }
@@ -317,19 +320,27 @@ img {
 }
 .social_link {
   display: block;
+  width: 44px;
+  height: 44px;
+  padding-top: 12px;
+  padding-left: 12px;
+  padding-right: 12px;
+  padding-bottom: 12px;
   border-radius: 22px;
+}
+.social_link:hover {
+  background-color: var(--accent);
 }
 .social_item:not(:first-child) {
   margin-left: 10px;
 }
 .soc_items {
-  width: 44px;
-  height: 44px;
+  width: 20px;
+  height: 20px;
   fill: var(--color_soc_links);
 }
 .soc_items:hover {
   fill: var(--soc_links_hover);
-  background-color: var(--accent);
 }
 
 /*clients*/
@@ -343,8 +354,14 @@ img {
 .client_list {
   flex-basis: calc((100% - 150px) / 6);
   min-height: 92px;
-  outline: 1px solid red;
+  border: 1px solid var(--color_soc_links);
+  border-radius: 4px;
 }
+.client_list:hover {
+  border: 1px solid var(--accent);
+  border-radius: 4px;
+}
+
 .client_list:not(:first-child) {
   margin-left: 30px;
 }
@@ -353,7 +370,7 @@ img {
   height: 60px;
 }
 .client_box {
-  padding: 16px 32px;
+  padding: 15px 31px;
 }
 
 /*portfolio*/
@@ -432,16 +449,16 @@ img {
 
 /*footer*/
 .footer {
-  padding-top: 40px;
-  padding-bottom: 60px;
+  padding-top: 66px;
+  padding-bottom: 54px;
   background-color: var(--background_hero);
 }
 .logo.footer_logo {
   display: inline-block;
   color: var(--primary_color);
-  padding-top: 20px;
-  padding-bottom: 20px;
-  margin: 0;
+}
+.footer_adress {
+  margin-top: 20px;
 }
 .footer_contact_list:not(:first-child) {
   margin-top: 10px;
@@ -459,4 +476,36 @@ img {
   font-style: normal;
   line-height: 1.7;
   color: var(--color_contact);
+}
+.footer .container {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: baseline;
+}
+.footer_box:nth-child(n + 2) {
+  margin-left: 70px;
+}
+.head_soc {
+  color: var(--primary_color);
+  font-weight: 700;
+  font-size: 14px;
+  line-height: 1.14;
+  letter-spacing: 0.03em;
+  text-transform: uppercase;
+  margin-bottom: 20px;
+}
+.footer_box .social_item_box {
+  padding: 0;
+}
+.footer_box .soc_items {
+  width: 20px;
+  height: 20px;
+  fill: var(--primary_color);
+}
+.social_link {
+  background-color: var(--footer_soc_background);
+  border-radius: 22px;
+}
+.footer .social_link:hover {
+  background-color: var(--accent);
 }
