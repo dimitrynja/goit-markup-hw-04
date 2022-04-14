@@ -134,7 +134,8 @@ img {
   color: var(--color_nav);
 }
 .header_contact_link {
-  display: inline-flex;
+  display: flex;
+  align-items: center;
   color: var(--color_contact);
 }
 .header_nav_link:hover,
